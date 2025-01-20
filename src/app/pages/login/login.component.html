@@ -1,0 +1,24 @@
+<app-default-login-layout
+title="Entre na sua conta"
+primaryBtnText = "Entrar agora"
+secondaryBtnText = "Inscreva-se Já!">
+<form [formGroup]="loginForm">
+    <app-primary-input
+        formControlName="email"
+        finputName="email"
+        type="email"
+        label="Email"
+        placeholder="alex@email.com">
+        <img src="svg/mail-icon.svg" alt="">
+    </app-primary-input>
+    <app-primary-input
+        formControName="password"
+        inputName="password"
+        type="password"
+        label="Senha"
+        placeholder="Digite sua senha">
+        <img src="svg/password-icon.svg" alt="">
+    </app-primary-input>
+    <span>Esqueceu a senha?</span>
+</form>
+</app-default-login-layout>
