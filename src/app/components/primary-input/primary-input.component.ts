@@ -1,13 +1,15 @@
 import { Component, forwardRef, Input } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
-type InputTypes = "text" | "password" | "email"
+type InputTypes = "text" | "email" | "password"
 
 @Component({
   selector: 'app-primary-input',
   standalone: true,
   imports: [
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      CommonModule
      ],
   providers: [
     {
@@ -29,6 +31,8 @@ export class PrimaryInputComponent implements ControlValueAccessor {
   value: string = ''
   onChange: any = () => {}
   onTouched: any = () => {}
+
+  inputControl = new FormControl;
 
   onInput(event: Event) {
     const value = (event.target as HTMLInputElement).value

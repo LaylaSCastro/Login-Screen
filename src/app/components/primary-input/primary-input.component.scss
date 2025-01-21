@@ -27,10 +27,10 @@
             border: none;
             padding:  10px 0 10px 15px;
             outline: none;
-            color: $text-color;
+            color: rgba(124, 124, 124);
         
             &:focus {
-                border: inset 0 0 0 1.2px rgb(255, 255, 255);            }
+                box-shadow: inset 0 0 0 1.2px rgb(255, 255, 255);            }
         }
 
         .icon {
