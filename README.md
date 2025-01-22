@@ -1,4 +1,5 @@
 # LoginScreen
+![image](https://github.com/user-attachments/assets/d864c2c4-7f6f-4561-b1ef-a686229fe393)
 
 A simple Angular application that provides a user login interface with responsive design and basic authentication features.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
